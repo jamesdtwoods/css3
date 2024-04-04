@@ -1,33 +1,36 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+      "sol10 sol10"
+      "mars meteorite"
+      "mars microscope"
+      "intrepid intrepid";
+    gap: 1rem;
+    width: 980px;
+    margin: 0 auto;
   }
-  figure {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
+  .one {
+    grid-area: sol10;
   }
-  figure:nth-child(3) {
-    grid-column: 1/2;
-    grid-row: 1/5;
-    display: block;
+  .two {
+    grid-area: mars;
   }
-  
+  .three {
+    grid-area: intrepid;
+  }
+  .four {
+    grid-area: meteorite;
+  }
+  .five {
+    grid-area: microscope;
+  }
   
   /* extremely basic formatting */
   body {
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
+    background-color: black;
   }
   img {
     max-width: 100%;
-  }
-  figure {
-    margin: 0;
-    padding: 0;
   }
   
