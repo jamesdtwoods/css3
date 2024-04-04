@@ -1,16 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+/*   gap: 1rem 2rem; */
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
 /* extremely basic formatting */
 body {
-    font-family: "Libre Franklin", sans-serif;
-    line-height: 1.5;
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1.5;
 }
-
 /* make image flex with container */
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 /* remove default margin/padding */
 figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
