@@ -1,9 +1,14 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 /*   gap: 1rem 2rem; */
   column-gap: 2rem;
   row-gap: 1rem;
+}
+
+figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* extremely basic formatting */
