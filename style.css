@@ -1,7 +1,15 @@
-
-
-/* extremely basic formatting */
-html {
+.card {
+    container-name: card;
+    container-type: inline-size;
+  }
+  @container card (min-width: 200px) {
+    .card h2 {
+      background-color: red;
+    }
+  }
+  
+  /* extremely basic formatting */
+  html {
     box-sizing: border-box;
   }
   *,
