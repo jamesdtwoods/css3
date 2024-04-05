@@ -1,74 +1,25 @@
-.logo {
-    min-width: 100px;
-    width: 400px;
-  }
-  nav {
-    max-width: 1200px;
-    padding: 2rem;
-    margin: 0 auto;
-  }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2rem;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  li:not(:first-child) {
-    margin-bottom: 0.9rem;
-  }
-  li:first-child {
-    order: 1;
-    margin: 0 auto;
-  }
-  li:nth-child(4),
-  li:nth-child(5) {
-    order: 2;
-  }
-  a {
-    color: #f3952f;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  a:hover {
-    color: #fed330;
-  }
-  @media (max-width: 900px) {
-    nav ul {
-      justify-content: center;
-      text-align: center;
+
+@media (min-width: 600px) {
+    .photo-cards {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      column-gap: 2%;
+      row-gap: 4rem;
     }
-    li:first-child {
-      flex-basis: 100%;
-    }
-    li:nth-child(3),
-    li:nth-child(2) {
-      order: 2;
+    .card {
+      flex-basis: 32%;
     }
   }
-  
-  /* extremely basic formatting */
-  html {
-    box-sizing: border-box;
+  @media (min-width: 850px) {
+    .photo-cards {
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 2%;
+    }
+    /* 100% - (4 gaps, 2% per gap) = 92%
+    92% / 5 images = 18.4% per image */
+    .card {
+      flex-basis: 18.4%;
+    }
   }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  body {
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    background-color: #111;
-    color: #fff;
-  }
-  img {
-    max-width: 100%;
-  }
-  
