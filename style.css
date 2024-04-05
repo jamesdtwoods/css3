@@ -1,12 +1,50 @@
 .logo {
-    max-width: 400px;
+    min-width: 100px;
+    width: 400px;
+  }
+  nav {
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  li:not(:first-child) {
+    margin-bottom: 0.9rem;
+  }
+  li:first-child {
+    margin-right: auto;
   }
   a {
-    color: #F3952F;
+    color: #f3952f;
+    text-decoration: none;
+    font-weight: bold;
   }
   a:hover {
-    text-decoration: none;
+    color: #fed330;
   }
+  @media (max-width: 900px) {
+    nav ul {
+      justify-content: center;
+      text-align: center;
+    }
+    li:first-child {
+      flex-basis: 100%;
+    }
+    
+  }
+  
+  
+  
+  
   /* extremely basic formatting */
   html {
     box-sizing: border-box;
@@ -28,6 +66,4 @@
   img {
     max-width: 100%;
   }
-  
-  
   
